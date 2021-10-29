@@ -9,10 +9,10 @@ class Pessoa:
         self.tentativas = tentativas
 
 user1 = Pessoa(str(input('Digite seu nome: ')), 10, 3)
+print(f"Seja Bem Vindo(a), {user1.nome}.!")
 valor = random.randint(1,10)
 
 while opcao == "SIM":
-    print(f"Seja Bem Vindo(a), {user1.nome}.!")
     print("------------------------------------------ \n")
     print(f" - Selecione um número de 1 a 10, você tem {user1.tentativas} tentativas: ")
     aux = False
